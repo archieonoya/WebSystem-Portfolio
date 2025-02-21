@@ -1,0 +1,502 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Micro+5&family=Protest+Riot&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Inter;
+}
+
+html{
+    background-color: #060826;
+    scroll-behavior: smooth;
+}
+
+/* NAVIGATION BAR - Start*/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    width: 88.5%;
+    padding: 30px 100px 20px 100px;
+    color: rgb(255, 255, 255);
+    animation: bgAnimation 20s ease infinite;
+    flex-wrap: wrap;
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    overflow: hidden;
+}
+header li{
+    width: auto;
+    list-style: none;
+    display: inline-block;
+    padding: 5px ;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    margin: 0px 10px 0px 10px;
+    position: relative;
+    text-decoration: none;
+    text-shadow: 2px 2px 7px rgba(0, 0, 0, 0.5);
+}
+header a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    transition: all 0.7s ease 0;
+}
+#Home:hover, #Home:focus{
+    color: #ff6146;
+}
+#AboutMe:hover, #AboutMe:focus{
+    color: #004cfa;
+}
+#Skills:hover, #Skills:focus{
+    color: #8e58bb;
+}
+#Projects:hover, #Projects:focus{
+    color: #15d26d;
+}
+#Achievements:hover, #Achievements:focus {
+    color: #fd4d8f;
+}
+#Home:after,#AboutMe:after,#Skills:after,#Projects:after,#Achievements:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1.5px;
+    bottom: 0;
+    left: 0;
+    transform-origin: bottom right;
+    transition: transform 0.30s ease-out;
+    transform: scaleX(0);
+}
+#Home:after{
+    background-color: #ff6146;
+}
+#AboutMe:after{
+    background-color: #004cfa;
+}
+#Skills:after{
+    background-color: #8e58bb;
+}
+#Projects:after{
+    background-color: #15d26d;
+}
+#Achievements:after{
+    background-color: #fd4d8f;
+}
+#Home:hover:after,#AboutMe:hover:after,#Skills:hover:after,#Projects:hover:after,#Achievements:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+/* NAVIGATION BAR - End*/
+
+/* HOME - Start*/
+.bg1{
+    position: absolute;
+    z-index: 1;
+    width: 1379px;
+    right: 0;
+}
+.archiePic{
+    position: absolute;
+    z-index: 2;
+    height: 670px;
+    top: auto;
+    right: 6%;
+    bottom: 0;
+    animation: anim 3s linear infinite;
+
+    scale: 97%;
+}
+@keyframes anim{
+    0%{
+        bottom:0;
+    }
+    50%{
+        bottom: -10px;
+    }
+    100%{
+        bottom: 0;
+    }
+}
+.bg2{
+    position: absolute;
+    z-index: 3;
+    width: 1380px;
+    right: 0;
+}
+.HomePage{
+    position: absolute;
+    z-index: 6;
+    margin: 0px 100px 0px 100px;
+    padding-top: 250px;
+    position: relative;
+    color: white;
+}
+.HomePage span{
+    font-weight: 600;
+}
+.HomePage .hello{
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.HomePage .name{
+    font-size: 92px;
+    font-weight: 800;
+    color: #ffffff;
+    display: inline-block;
+    vertical-align: top;
+    height: .90em;
+    line-height: 1em;
+}
+.HomePage .name:Hover{
+    font-family: "Protest Riot", sans-serif;
+    letter-spacing: 13px;
+    background-image: linear-gradient(to right, #ff6146, #fd4d8f, #8e58bb, #004cfa, #15d26d);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    transition: 0.50s;
+}
+.HomePage .Animate{
+    margin-top: 10px;
+    font-size: 40px;
+
+}
+.HomePage .Animate span {
+    font-size: 45px;
+    font-weight: 700;
+    background-image: linear-gradient(to right, #ff6146, #fd4d8f, #8e58bb, #004cfa, #15d26d);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+.logoLink{
+    margin: 30px 0px 30px 0px;
+    left: 0;
+    display: flex;
+    align-items: center;
+    
+}
+.facebookLogo{
+    width: 30px;
+    padding-right: 20px;
+    transition: 0.60s ease;
+}
+.gmailLogo{
+    width: 30px;
+    transition: 0.60s ease;
+}
+.facebookLogo:hover, .gmailLogo:hover {
+    transition: transform 0.3s ease;
+    transform: scale(1.3);
+}
+.HomePage .downloadCV{
+    text-decoration: none;
+    padding: 10px 25px 10px 25px;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: 500;
+    border: 1.5px solid #ffffff;
+    background: transparent;
+    cursor: pointer;
+    color: #ffffff;
+    transition: background-color 0.3s ease;
+}
+.HomePage .downloadCV:hover{
+    background-color: #004cfa;
+}
+.HomePage .downloadCV::after{
+    background-color: #004cfa;
+}
+button{
+    width: auto;
+    padding: 10px 20px 10px 20px;
+    border-radius: 25px;
+    font-weight: 600;
+    border: 2px solid #ffffff;
+    background: transparent;
+    cursor: pointer;
+    color: #ffffff;
+    transition: background-color 0.3s ease;
+}
+button:hover{
+    background-color: #004cfa;
+    color: #ffffff;
+}
+button:active{
+    background-color: #0039bf;
+}
+/* HOME - End*/
+
+/* ABOUT ME - Start*/
+.ABOUTME{
+    padding: 125px 100px 50px 100px;
+
+}
+.ABOUTME .AboutMeTitle h1{
+    color: #004cfa;
+    font-size: 50px;
+    transition: color 0.5s ease;
+}
+.ABOUTME .AboutMeTitle h1 span{
+    color: #ffffff;
+    font-size: 50px;
+}
+.ABOUTME .AboutMeTitle h1:hover{
+    color: #ff6146;
+}
+.ABOUTME .AboutMeContent{
+    padding: 70px 0px 0px 0px;
+    column-count: 1;
+    color: #ffffff;
+}
+.ABOUTME .AboutMeContent .shape1{
+    height: 500px;
+    top: 200px;
+    right: 0;
+    position: absolute;
+    z-index: 1;
+}
+.ABOUTME .AboutMeContent .Content1{
+    width: 920px;
+    display: flex;
+    column-count: 2;
+}
+
+.ABOUTME .AboutMeContent .Content1 .content1_1{
+    margin: 10px 0px 10px 50px;
+}
+.ABOUTME .AboutMeContent .Content1 h1{
+    margin: 10px 0px 10px 0px;
+    font-size: 50px;
+    font-weight: 600;
+}
+.ABOUTME .AboutMeContent .Content1 .content1_1 img{
+    height: 300px;
+    position: relative;
+    z-index: 3;
+}
+.ABOUTME .AboutMeContent .Content1 .content1_2{
+    padding: 0px 0px 0px 20px;
+    margin: auto;
+    position: relative;
+    z-index: 4;
+}
+.ABOUTME .AboutMeContent .Content1 .label{
+    font-weight: 700;
+}
+.ABOUTME .AboutMeContent .Content2{
+    position: relative;
+    z-index: 4;
+    padding: 0px 0px 0px 0px;
+}
+.ABOUTME .AboutMeContent .Content2 h1{
+    font-size: 40px;
+}
+.ABOUTME .AboutMeContent .Content2 .shape3{
+    top: -50px;
+    left: -100px;
+    position: relative;
+    z-index: 1;
+    height: 200px;
+}
+.ABOUTME .AboutMeContent .Content2 .school table {
+    width: 100%;
+    margin: 50px 0px 0px 0px;
+    text-align: center;
+    table-layout: fixed;
+}
+.ABOUTME .AboutMeContent .Content2 .school table th,
+.ABOUTME .AboutMeContent .Content2 .school table td {
+    width: 33.33%;
+}
+
+.ABOUTME .AboutMeContent .Content2 .school th img{
+    height: 150px;
+}
+.ABOUTME .AboutMeContent .Content2 .school .label{
+    height: 50px;
+    font-size: 25px;
+    font-weight: 700;
+}
+.ABOUTME .AboutMeContent .Content2 .school .name{
+    font-weight: 600;
+}
+
+.ABOUTME .AboutMeContent .Content2 .school #awards1{
+    height: 175px;
+    width: auto;
+    font-size: 15px;
+    font-weight:400;
+    display: none;
+}
+.ABOUTME .AboutMeContent .Content2 .school #awards2{
+    height: 80px;
+    font-size: 15px;
+    font-weight:400;
+    display: none;
+}
+.ABOUTME .AboutMeContent .Content2 .school .awards span{
+    font-size: 16px;
+    font-weight: 700;
+}
+.ABOUTME .AboutMeContent .Content2 .school #awards1 #awards2{
+    height: 0px;
+    font-size: 14px;
+    font-weight: 600;
+}
+.ABOUTME .AboutMeContent .Content2 .school  button{
+    margin-top: 20px;
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: 400;
+}
+.ABOUTME .AboutMeContent .Content2 .school .more button:hover{
+    color: #ffffff;
+    transition: background-color 0.3s ease;
+    background-color: #004cfa;
+}
+.ABOUTME .AboutMeContent .Content2 .school .more button:fo{
+    color: #ffffff;
+    transition: background-color 0.3s ease;
+    background-color: #0036b4;
+}
+.ABOUTME .AboutMeContent .Content2 .school .more button:active{
+    color: #ffffff;
+    transition: background-color 0.3s ease;
+    background-color: #0036b4;
+}
+/* ABOUT ME - End*/
+
+/* SKILLS - Start*/
+.SKILLS{
+    padding: 125px 100px 800px 100px;
+}
+.SKILLS .SkillsTitle h1{
+    color: #8e58bb;
+    font-size: 50px;
+    transition: color 0.5s ease;
+}
+.SKILLS .SkillsTitle h1 span{
+    color: #ffffff;
+    font-size: 50px;
+}
+.SKILLS .SkillsTitle h1:hover{
+    color: #15d26d;
+    transition: 0.5s ease;
+}
+.SKILLS .shape4{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    right: 0;
+    top: 50px;
+}
+.SKILLS .SkillsTitle .titleS{
+    position: absolute;
+    z-index: 2;
+}
+.SKILLS .SkillsContent {
+   padding: 50px;
+}
+.SKILLS .SkillsContent .Container {
+    width: 69%;
+    height: 610px;
+    top: 35%;
+    background-color: #e1bdff6c;
+    position: absolute;
+    z-index: 2;
+    border-radius: 25px;
+    backdrop-filter: blur(20px);
+    padding: 50px 80px 50px 80px;
+    color: #ffffff;
+}
+.SKILLS .SkillsContent .Container .icons{
+    margin: 20px;
+    display: flex;
+}
+/* SKILLS - End*/
+
+/* Projects - Start*/
+.PROJECTS{
+    padding: 125px 100px 0px 100px;
+}
+.PROJECTS .ProjectsTitle h1{
+    color: #15d26d;
+    font-size: 50px;
+    transition: color 0.5s ease;
+    position: relative;
+    z-index: 50;
+}
+.PROJECTS .ProjectsTitle h1 span{
+    color: #ffffff;
+    font-size: 50px;
+}
+.PROJECTS .ProjectsTitle h1:hover{
+    color: #004cfa;
+    transition: 0.5s ease;
+}
+.PROJECTS .shape5{
+    height: 500px;
+    top: 500px;
+    right: 0;
+    position: absolute;
+    z-index: 1;
+}
+.PROJECTS .shape6{
+    height: 200px;
+    top: 1000px;
+    left: 2;
+    position: absolute;
+    z-index: 1;
+}
+.PROJECTS .shape7{
+    height: 500px;
+    top: 10%;
+    left: 0;
+    position: absolute;
+    z-index: 1;
+}
+.PROJECTS .ProjectsContent{
+    padding-top: 30px;
+    margin: auto;
+    width: 600px;
+    position: relative;
+    z-index: 20;
+}
+.PROJECTS .ProjectsContent .projectThumbnail{
+    width: 500px;
+}
+.PROJECTS .ProjectsContent .projectContainer{
+    background-color: #82ffbc63;
+    z-index: 2;
+    border-radius: 25px;
+    backdrop-filter: blur(20px);
+    padding: 50px 50px 40px 50px;
+    margin-bottom: 100px;
+}
+.PROJECTS .ProjectsContent .projectContainer .label h1{
+    color: #ffffff;
+    font-size: 28px;
+    padding: 30px 0px 0px 0px;
+} 
+.PROJECTS .ProjectsContent .projectContainer .label p{
+    display: inline-block;
+    width: auto;
+    padding: 0px 20px 0px 20px;
+    margin: 10px 0px 10px 0px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 25px;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    font-size: 13px;
+}
+/* Projects - End*/
