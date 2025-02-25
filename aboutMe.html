@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar2">
+        <h3>Portfolio</h3>
+        <ul>
+            <li><a href="index.html" id="Home" class="Home">Home</a></li>
+            <li><a href="aboutMe.html" id="AboutMe">About Me</a></li>
+            <li><a href="skills.html" id="Skills">Skills</a></li>
+            <li><a href="projects.html" id="Projects">Projects</a></li>
+        </ul>
+    </header>
+
+    <section class="ABOUTME">
+        <div class="AboutMeTitle">
+            <h1 class="titleAM"> ← ← ← ← ← ← ← ← ← <span>About Me  </span> → → → → → → → →</h1>
+        </div>
+    
+        <div class="AboutMeContent">
+            <img class="shape1" src="\WP3\Assests\Shapes\shape1.svg" alt="shape1">
+            <div class="Content1">
+                <div class="content1_1">
+                    <img id="myImage" src="\WP3\Assests\ProfilePicture\archiePic2.svg" alt="archiePic2">  
+                </div>
+                <div class="content1_2">
+                    <p>Hello there! <span class="label">I'm</span></p>
+                    <h1>Archie Samole Onoya</h1>
+                    <p>an aspiring<span class="label"> Web Developer</span> that is based in the Philippines.</p><br>
+                    <p>As a versatile professional, I bring a unique blend of expertise in web development and design to the industry. I'am dedicated to crafting engaging user-friendly digital experience.</p>
+                </div>
+                
+            </div>
+            <div class="Content2">
+                <img class="shape3" src="\WP3\Assests\Shapes\shape3.svg" alt="shape3">
+                <h1>→ Educational Background</h1>
+                <div class="school">
+                    <table>
+                        <tr>
+                            <th><img src="\WP3\Assests\LogoSchool\tsces.svg" alt=""></th>
+                            <th><img src="\WP3\Assests\LogoSchool\tnhs.svg" alt=""></th>
+                            <th><img src="\WP3\Assests\LogoSchool\bu.svg" alt=""></th>
+                        </tr>
+                        <tr class="label">
+                            <td>Primary</td>
+                            <td>Secondary</td>
+                            <td>Tertiary</td>
+                        </tr>
+                        <tr class="name">
+                            <td>Tabaco South Central Elementary School</td>
+                            <td>Tabaco National High School</td>
+                            <td>Bicol University</td>
+                        </tr>
+                        <tr class="year">
+                            <td>A.Y. 2010-2016</td>
+                            <td>A.Y. 2016-2022</td>
+                            <td>A.Y. 2022-2026</td>
+                        </tr>
+                        <tr class="awards">
+                            <td> </td>
+                            <td>
+                                <span id="awards1">
+                                    <span id="awardsList"><br>Awards Received:<br><br></span> 
+                                    Grade 7: with Honors<br> 
+                                    Grade 8: with Honors<br> 
+                                    Grade 9: with Honors<br> 
+                                    Grade 10: with High Honors<br>
+                                    Grade 11: with High Honors<br>
+                                    Grade 12: with High Honors<br>
+                                </span>
+                                <button id="seeMore1" onclick="toggleAwards('awards1', 'seeMore1')">See more...</button>
+                                <!--<button id="seeMore1" onclick="toggleAwards1()">See more...</button>
+                                -->
+                            </td>
+                            <td>
+                                <span id="awards2">
+                                    <span id="awardsList"><br>Awards Received:<br><br></span> 
+                                    Deans Lister, 1st Semester A.Y. 2022-2023<br>
+                                </span>
+                                <button id="seeMore2" onclick="toggleAwards('awards2', 'seeMore2')">See more...</button>
+                                <!--<button id="seeMore2" onclick="toggleAwards2()">See more...</button>
+                                -->
+                                </span>
+                            </td>                        
+                        </tr>
+                      </table>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
